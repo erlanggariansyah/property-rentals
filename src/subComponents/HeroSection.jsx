@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const HeroSection = () => {
   return (
@@ -7,10 +8,13 @@ const HeroSection = () => {
         <h1>BE OUR GUEST</h1>
         <p>LIVE LIKE A KING IN OUR BEST HOUSES</p>
         <p>
-          SEE FROM OUR LOVELY GUESTS{' '}
-          <a style={{ all: 'unset', cursor: 'pointer', color: "black" }} href='/notes'>
+          SEE FROM OUR LOVELY GUESTS{" "}
+          <Link 
+            to="/notes" 
+            style={{ all: 'unset', cursor: 'pointer', color: "black" }}
+          >
             HERE
-          </a>
+          </Link>
         </p>
       </section>
     </>

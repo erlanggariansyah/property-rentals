@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { RiFacebookBoxLine, RiYoutubeLine, RiGithubLine } from "react-icons/ri";
 const SubContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,7 +11,7 @@ const SubContact = () => {
     const note = { name, email, message };
 
     try {
-      const res = await fetch("http://localhost:5000/api/notes", {
+      const res = await fetch("https://property-rentals-eight.vercel.app/api/notes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(note),
