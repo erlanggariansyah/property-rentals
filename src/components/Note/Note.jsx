@@ -25,8 +25,6 @@ const Note = () => {
     try {
       await axios.delete(`${API_URL}/${id}`);
       setNotes(notes.filter((n) => n.id !== id));
-
-      window.location.reload();
     } catch (error) {
       console.error("Delete error:", error);
     }
@@ -48,7 +46,6 @@ const Note = () => {
       setNotes(notes.map((n) => (n.id === editingId ? res.data : n)));
       setEditingId(null);
 
-      window.location.reload();
     } catch (error) {
       console.error("Update error:", error);
     }
