@@ -22,6 +22,5 @@
       "source": "/(.*)",
       "destination": "dist/index.html"
     }
-  ],
-   "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  ]
 }
