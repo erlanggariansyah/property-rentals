@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { RiFacebookBoxLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import { RiFacebookBoxLine } from "react-icons/ri";
 const SubContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
