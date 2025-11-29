@@ -9,6 +9,7 @@ import TermsAndConditions from './components/TermsAndConditions/TermsAndConditio
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './App.css'
+import Note from './components/Note/Note';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/termsandconditions' element={<TermsAndConditions/>}/>
           <Route path='/villas' element={<Villas/>}/>
           <Route path='/villa/:id' element={<SingleVilla/>}/>
+          <Route path='/notes' element={<Note/>}/>
         </Routes>
         <Footer/>
       </Router>
